@@ -1,13 +1,12 @@
 /* Primary Menu */
 
 .menu-primary-container {
-	display: none;
-	top: 0;
 	width: 100%;
 	min-height: 3em;
 	border-bottom: 1px solid $color__text-light;
 	background-color: $color__header-bg;
 	ul {
+		display: none;
 		margin: 0;
 		padding: 0;
 		list-style: none;
@@ -16,9 +15,6 @@
 			margin: 0;
 			padding: 0;
 		}
-	}
-	&.toggled {
-		display: block;
 	}
 	a {
 		display: block;
@@ -32,10 +28,10 @@
 	}
 }
 
-@media screen and ( min-width: $sm ) {
+@media screen and ( min-width: 600px ) {
 	.menu-primary-container {
-		display: block;
 		ul {
+			display: block;
 			width: auto;
 			margin: 0 auto;
 			text-align: center;
@@ -100,9 +96,7 @@ $dash_width: 1.5em;
 	width: 3em;
 	height: 3em;
 	padding: 0;
-	border-color: transparent;
-	background-color: transparent;
-	background-color: $color__header-bg;
+	background-color: $color__accent;
 	font-size: $font__size-body-px;
 	text-align: left;
 	text-indent: -9999px;
@@ -111,27 +105,16 @@ $dash_width: 1.5em;
 	}
 	&:hover,
 	&:focus {
-		border-color: transparent;
-		background-color: $color__header-bg;
+		background-color: rgba( $color__accent, 0.5 );
 	}
-	@media screen and ( min-width: $sm ) {
+	@media screen and ( min-width: 600px ) {
 		display: none;
 	}
-}
-
-.menu-toggle-icon {
-	display: block;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	width: $dash_width;
-	height: $dash_height;
-	margin-top: ( $dash_height / ( -2 ) ) ;
-	margin-left: ( $dash_width / ( -2 ) ) ;
-	background-color: #fff;
+	// The icon.
 	&:before,
 	&:after {
 		display: block;
+		left: 25%;
 		position: absolute;
 		width: $dash_width;
 		height: $dash_height;
@@ -139,26 +122,22 @@ $dash_width: 1.5em;
 		content: '';
 	}
 	&:before {
-		top: ( $dash_height * ( -7 ) );
+		top: 25%;
 	}
 	&:after {
-		top: ( $dash_height * 7 );
+		bottom: 25%;
 	}
 }
 
-.menu-toggle.toggled {
-	.menu-toggle-icon {
-		background-color: transparent;
-		&:before,
-		&:after {
-			top: 0;
-			background-color: #fff;
-		}
-		&:before {
-			transform: rotate( 225deg );
-		}
-		&:after {
-			transform: rotate( -225deg );
-		}
+.menu-toggle.toggle-on {
+	&:before,
+	&:after {
+		background-color: #fff;
+	}
+	&:before {
+		transform: rotate( 225deg );
+	}
+	&:after {
+		transform: rotate( -225deg );
 	}
 }
