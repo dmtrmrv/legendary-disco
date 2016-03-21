@@ -1,5 +1,3 @@
-/* Legendary Disco */
-
 /**
  * Normalize
  */
@@ -12,7 +10,7 @@
 
 html {
 	box-sizing: border-box;
-	font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
+	font-family: 'Roboto', Helvetica, Arial, sans-serif;
 	font-size: 18px;
 
 	-webkit-text-size-adjust: 100%;
@@ -60,7 +58,8 @@ template {
 	display: none;
 }
 
-abbr[title] {
+abbr[title],
+acronym {
 	border-bottom: 1px dotted;
 	cursor: help;
 }
@@ -70,11 +69,14 @@ strong {
 	font-weight: bold;
 }
 
-dfn {
+dfn,
+em,
+i {
 	font-style: italic;
 }
 
-mark {
+mark,
+ins {
 	color: #585858;
 	background: rgba(88, 88, 88, 0.15);
 	text-decoration: none;
@@ -197,4 +199,238 @@ table {
 td,
 th {
 	padding: 0;
+}
+
+/**
+ * Typography
+ */
+
+/* Headings */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	clear: both;
+	margin: 0 0 27px 0;
+	margin: 0 0 1.5rem 0;
+	color: #1e1e1e;
+	font-family: 'Roboto', Helvetica, Arial, sans-serif;
+	font-weight: 700;
+	line-height: 27px;
+	line-height: 1.5rem;
+}
+
+h1 {
+	font-size: 32px;
+	font-size: 1.77778rem;
+	line-height: 40.5px;
+	line-height: 2.25rem;
+}
+
+h2 {
+	font-size: 27px;
+	font-size: 1.5rem;
+}
+
+h3 {
+	font-size: 24px;
+	font-size: 1.33333rem;
+}
+
+h4 {
+	font-size: 18px;
+	font-size: 1rem;
+	font-weight: 700;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+}
+
+h5 {
+	font-size: 18px;
+	font-size: 1rem;
+	font-weight: 400;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+}
+
+h6 {
+	font-size: 18px;
+	font-size: 1rem;
+	font-weight: 300;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+}
+
+/* Copy */
+
+p {
+	margin: 0 0 1.5em;
+}
+
+address {
+	margin: 0 0 1.5em;
+}
+
+big {
+	font-size: 20.25px;
+	font-size: 1.125rem;
+	line-height: 18px;
+	line-height: 1rem;
+}
+
+/* Links */
+
+a {
+	color: #5d8aa6;
+	background-color: transparent;
+	text-decoration: none;
+}
+
+a:hover,
+a:active {
+	outline: 0;
+	color: #5d8aa6;
+	text-decoration: underline;
+}
+
+a:focus {
+	outline: thin dotted;
+	outline: 5px auto -webkit-focus-ring-color;
+	outline-offset: -2px;
+	color: #5d8aa6;
+	text-decoration: underline;
+}
+
+/* Blockquotes */
+
+blockquote,
+q {
+	margin: 1.125em;
+	font-family: 'Roboto', Helvetica, Arial, sans-serif;
+	font-size: 24px;
+	font-size: 1.33333rem;
+	font-style: italic;
+	line-height: 27px;
+	line-height: 1.5rem;
+	quotes: '' '';
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+	content: '';
+}
+
+blockquote p,
+q p {
+	margin: 0;
+}
+
+cite {
+	display: block;
+	margin: 0;
+	font-family: 'Roboto', Helvetica, Arial, sans-serif;
+	font-size: 11.25px;
+	font-size: 0.625rem;
+	font-style: normal;
+	line-height: 27px;
+	line-height: 1.5rem;
+	letter-spacing: 0.0625em;
+	text-transform: uppercase;
+}
+
+cite:before {
+	content: '\2014\2002';
+}
+
+/* Lists */
+
+ul,
+ol {
+	margin: 0 0 1.5em 1.5em;
+	padding-left: 1.5em;
+}
+
+ul {
+	list-style: disc;
+}
+
+ol {
+	list-style: decimal;
+}
+
+li > ul,
+li > ol {
+	margin-bottom: 0;
+	margin-left: 0.5em;
+}
+
+dt {
+	font-weight: bold;
+}
+
+dd {
+	margin: 0 0 1.5em;
+}
+
+/* Tables */
+
+table {
+	width: 100%;
+	margin-bottom: 1.44444em;
+	padding: 0;
+
+	cellspacing: 0;
+}
+
+td,
+th {
+	padding: 0.75em;
+	border-bottom: 1px solid rgba(88, 88, 88, 0.15);
+	text-align: left;
+}
+
+thead th {
+	padding: 1em 1em 0.92593em;
+	background-color: rgba(88, 88, 88, 0.15);
+	font-size: 0.75em;
+	font-weight: 400;
+	line-height: 2;
+	text-transform: uppercase;
+}
+
+/* Code */
+
+pre {
+	overflow: auto;
+	max-width: 100%;
+	margin-bottom: 1.6em;
+	padding: 1.6em;
+	color: #fff;
+	background: #1e1e1e;
+	font-family: 'Courier 10 Pitch', Courier, monospace;
+	line-height: 1.6;
+	word-wrap: initial;
+}
+
+code,
+kbd,
+pre,
+samp,
+tt,
+var {
+	font-family: Monaco, Consolas, 'Andale Mono', 'DejaVu Sans Mono', monospace;
+	font-size: 16.875px;
+	font-size: 0.9375rem;
+}
+
+@media screen and (min-width: 768px) {
+	blockquote,
+	q {
+		margin: 2.25em;
+	}
 }
