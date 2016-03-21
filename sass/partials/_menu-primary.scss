@@ -3,7 +3,7 @@
 .menu-primary-container {
 	width: 100%;
 	// min-height: 3em;
-	background-color: $color__header-bg;
+	background-color: $color__text-light;
 	ul {
 		display: none;
 		margin: 0;
@@ -30,6 +30,7 @@
 @media screen and ( min-width: 600px ) {
 	.menu-primary-container {
 		border-bottom: 1px solid $color__text-light;
+		background-color: $color__header-bg;
 		ul {
 			display: block;
 			width: auto;
@@ -105,7 +106,7 @@ $dash_width: 1.5em;
 	}
 	&:hover,
 	&:focus {
-		background-color: rgba( $color__accent, 0.5 );
+		background-color: rgba( $color__accent, 0.9 );
 	}
 	@media screen and ( min-width: 600px ) {
 		display: none;
@@ -132,8 +133,10 @@ $dash_width: 1.5em;
 .menu-toggle.toggled-on {
 	&:before {
 		transform: rotate( 225deg );
+		top: 26px;
 	}
 	&:after {
 		transform: rotate( -225deg );
+		bottom: 27px;
 	}
 }
