@@ -21,7 +21,7 @@ html {
 body {
 	margin: 0;
 	color: #585858;
-	background: #aeebf2;
+	background: #f0f0f0;
 	line-height: 1.5;
 }
 
@@ -435,13 +435,14 @@ var {
 /* Structure */
 
 body {
-	background-color: #aeebf2;
+	background-color: #f0f0f0;
 }
 
 .site {
 	max-width: 1024px;
 	margin-right: auto;
 	margin-left: auto;
+	background-color: #fff;
 }
 
 /**
