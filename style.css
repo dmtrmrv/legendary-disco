@@ -445,6 +445,14 @@ body {
 	background-color: #fff;
 }
 
+.site-content {
+	padding: 1.5em 1.5em 0;
+}
+
+.widget-area {
+	display: none;
+}
+
 /**
  * Components
  */
@@ -551,6 +559,10 @@ blockquote.alignright {
 	blockquote,
 	q {
 		margin: 2.25em;
+	}
+
+	.site-content {
+		padding-top: 3em 3em 1.5em;
 	}
 
 	blockquote.alignleft {

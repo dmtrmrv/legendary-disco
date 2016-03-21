@@ -7,15 +7,15 @@ $lg: 1128px;
 // Susy Mobile (Default).
 $susy: (
 	columns: 12,
-	gutters: 38/46,
+	gutters: 32/47,
 	math: fluid,
 	output: float,
 	gutter-position: after
 );
 $susy-static: (
 	columns: 12,
-	column-width: 46px,
-	gutters: 38/46,
+	column-width: 47px,
+	gutters: 32/47,
 	math: static,
 	output: float,
 	gutter-position: after,
