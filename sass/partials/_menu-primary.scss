@@ -2,8 +2,7 @@
 
 .menu-primary-container {
 	width: 100%;
-	min-height: 3em;
-	border-bottom: 1px solid $color__text-light;
+	// min-height: 3em;
 	background-color: $color__header-bg;
 	ul {
 		display: none;
@@ -30,6 +29,7 @@
 
 @media screen and ( min-width: 600px ) {
 	.menu-primary-container {
+		border-bottom: 1px solid $color__text-light;
 		ul {
 			display: block;
 			width: auto;
@@ -114,26 +114,22 @@ $dash_width: 1.5em;
 	&:before,
 	&:after {
 		display: block;
-		left: 25%;
 		position: absolute;
+		left: 25%;
 		width: $dash_width;
 		height: $dash_height;
 		background-color: #fff;
 		content: '';
 	}
 	&:before {
-		top: 25%;
+		top: 23px;
 	}
 	&:after {
-		bottom: 25%;
+		bottom: 23px;
 	}
 }
 
-.menu-toggle.toggle-on {
-	&:before,
-	&:after {
-		background-color: #fff;
-	}
+.menu-toggle.toggled-on {
 	&:before {
 		transform: rotate( 225deg );
 	}

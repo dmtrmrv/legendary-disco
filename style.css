@@ -788,8 +788,6 @@ blockquote.alignright {
 
 .menu-primary-container {
 	width: 100%;
-	min-height: 3em;
-	border-bottom: 1px solid rgba(88, 88, 88, 0.15);
 	background-color: #fff;
 }
 
@@ -855,25 +853,20 @@ blockquote.alignright {
 }
 
 .menu-toggle:before {
-	top: 25%;
+	top: 23px;
 }
 
 .menu-toggle:after {
-	bottom: 25%;
+	bottom: 23px;
 }
 
-.menu-toggle.toggle-on:before,
-.menu-toggle.toggle-on:after {
-	background-color: #fff;
-}
-
-.menu-toggle.toggle-on:before {
+.menu-toggle.toggled-on:before {
 	-webkit-transform: rotate(225deg);
 	    -ms-transform: rotate(225deg);
 	        transform: rotate(225deg);
 }
 
-.menu-toggle.toggle-on:after {
+.menu-toggle.toggled-on:after {
 	-webkit-transform: rotate(-225deg);
 	    -ms-transform: rotate(-225deg);
 	        transform: rotate(-225deg);
@@ -888,6 +881,10 @@ blockquote.alignright {
  */
 
 @media screen and (min-width: 600px) {
+	.menu-primary-container {
+		border-bottom: 1px solid rgba(88, 88, 88, 0.15);
+	}
+
 	.menu-primary-container ul {
 		display: block;
 		width: auto;
