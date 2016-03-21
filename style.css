@@ -456,9 +456,9 @@ body {
 /* Footer */
 
 .site-footer {
-	padding: 0.75em 1.5em;
+	padding: 1.5em 1.5em;
 	color: rgba(88, 88, 88, 0.39);
-	background-color: rgba(88, 88, 88, 0.15);
+	background-color: #fff;
 }
 
 .site-footer a {
@@ -959,13 +959,13 @@ blockquote.alignright {
 	}
 
 	.site-footer {
-		padding: 0.75em 3em;
+		padding: 1.5em 3em 1.5em;
 	}
 
 	.site-info-generator {
 		margin-right: 0.75em;
 		padding-right: 0.75em;
-		border-right: 1px solid rgba(88, 88, 88, 0.39);
+		border-right: 1px solid rgba(88, 88, 88, 0.15);
 	}
 
 	blockquote.alignleft {

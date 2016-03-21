@@ -2,11 +2,11 @@
 
 .site-footer {
 	@extend .clear;
-	padding: 0.75em 1.5em;
+	padding: 1.5em 1.5em;
 	color: $color__footer-text;
-	background-color: $color__footer-bg;
+	background-color: #fff;
 	@media screen and ( min-width: $sm ) {
-		padding: 0.75em 3em;
+		padding: 1.5em 3em 1.5em;
 	}
 	a {
 		color: $color__text-secondary;
@@ -17,7 +17,7 @@
 	@media screen and ( min-width: $sm ) {
 		margin-right: 0.75em;
 		padding-right: 0.75em;
-		border-right: 1px solid $color__text-secondary;
+		border-right: 1px solid $color__text-light;
 	}
 }
 
