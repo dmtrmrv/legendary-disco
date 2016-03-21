@@ -457,12 +457,21 @@ body {
 
 .site-footer {
 	padding: 1.5em 1.5em;
+	border-top: 1px solid rgba(88, 88, 88, 0.15);
 	color: rgba(88, 88, 88, 0.39);
 	background-color: #fff;
 }
 
 .site-footer a {
 	color: rgba(88, 88, 88, 0.39);
+}
+
+.site-info-generator {
+	display: block;
+}
+
+.site-info-network {
+	display: block;
 }
 
 .site-info {
@@ -788,13 +797,13 @@ blockquote.alignright {
 
 .menu-primary-container {
 	width: 100%;
-	background-color: rgba(88, 88, 88, 0.15);
 }
 
 .menu-primary-container ul {
 	display: none;
 	margin: 0;
-	padding: 0;
+	padding: 0.75em 0;
+	border-bottom: 1px solid rgba(88, 88, 88, 0.15);
 	list-style: none;
 }
 
@@ -802,12 +811,12 @@ blockquote.alignright {
 	display: block;
 	margin: 0;
 	padding: 0;
+	border-bottom: 0;
 }
 
 .menu-primary-container a {
 	display: block;
-	padding: 1.2em;
-	background-color: #fff;
+	padding: 0.6em;
 	font-size: 15px;
 	line-height: 1.2;
 	text-align: center;
@@ -892,6 +901,8 @@ blockquote.alignright {
 		display: block;
 		width: auto;
 		margin: 0 auto;
+		padding: 0;
+		border-bottom: 0;
 		text-align: center;
 		list-style: none;
 	}
@@ -923,7 +934,7 @@ blockquote.alignright {
 	}
 
 	.menu-primary-container ul ul a {
-		width: 13em;
+		width: 15em;
 		padding: 0 1.2em;
 		font-weight: normal;
 	}
@@ -939,7 +950,8 @@ blockquote.alignright {
 	}
 
 	.menu-primary-container a {
-		padding: 1.2em;
+		padding: 27px;
+		background-color: #fff;
 		text-align: left;
 	}
 
@@ -963,9 +975,14 @@ blockquote.alignright {
 	}
 
 	.site-info-generator {
+		display: inline;
 		margin-right: 0.75em;
 		padding-right: 0.75em;
 		border-right: 1px solid rgba(88, 88, 88, 0.15);
+	}
+
+	.site-info-network {
+		display: inline;
 	}
 
 	blockquote.alignleft {
