@@ -1,1 +1,12 @@
 /* Legendary Disco */
+
+// Dependencies
+@import 'susy';
+
+// Variables, mixins and functions
+@import 'global/variables/_variables';
+@import 'global/functions';
+@import 'global/mixins';
+
+// Theme Styles start here
+@import 'base/normalize';

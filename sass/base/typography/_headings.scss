@@ -1,0 +1,50 @@
+/* Headings */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	clear: both;
+	margin: 0 0 ( $font__size-body-px * $font__line-height-body ) 0;
+	margin: 0 0 1.5rem 0;
+	color: $color__headings;
+	font-family: $font__headings;
+	font-weight: 600;
+	@include line-height( 1.5 );
+}
+
+h1 {
+	@include font-size( 32/18 );
+	@include line-height( 2.25 );
+}
+
+h2 {
+	@include font-size( 27/18 );
+}
+
+h3 {
+	@include font-size( 24/18 );
+}
+
+h4 {
+	@include font-size( 1 );
+	font-weight: 600;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+}
+
+h5 {
+	@include font-size( 1 );
+	font-weight: 400;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+}
+
+h6 {
+	@include font-size( 1 );
+	font-weight: 300;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+}
