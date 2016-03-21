@@ -1,0 +1,14 @@
+/* Centered */
+
+.page-template-centered {
+	.content-area {
+		@include with_layout( $susy-static ) {
+			max-width: span( 8 );
+		}
+		margin-right: auto;
+		margin-left: auto;
+	}
+	.post-thumbnail {
+		@extend %outset;
+	}
+}

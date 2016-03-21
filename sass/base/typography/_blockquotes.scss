@@ -1,5 +1,7 @@
 /* Blockquotes */
 
+$bc_margin: $font__size-body-px * $font__line-height-body;
+
 blockquote,
 q {
 	@include font-size( 24/18 );
