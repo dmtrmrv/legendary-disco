@@ -474,6 +474,225 @@ body {
  * Components
  */
 
+/* Forms */
+
+input[type='text'],
+input[type='email'],
+input[type='url'],
+input[type='password'],
+input[type='search'],
+textarea {
+	width: 100%;
+	padding: 0.69444em 1em;
+	border: 1px solid;
+	border-color: rgba(88, 88, 88, 0.39);
+	-webkit-appearance: none;
+	color: #585858;
+	background-color: transparent;
+	box-shadow: none;
+	font-size: 18px;
+	font-size: 1rem;
+	line-height: 1.5;
+	vertical-align: middle;
+}
+
+input[type='text']:focus,
+input[type='email']:focus,
+input[type='url']:focus,
+input[type='password']:focus,
+input[type='search']:focus,
+textarea:focus {
+	border-color: #5d8aa6;
+	outline: 0;
+}
+
+label {
+	color: rgba(88, 88, 88, 0.39);
+}
+
+::-webkit-input-placeholder {
+	color: rgba(88, 88, 88, 0.39);
+}
+
+:-moz-placeholder {
+	color: rgba(88, 88, 88, 0.39);
+}
+
+::-moz-placeholder {
+	opacity: 1;
+	color: rgba(88, 88, 88, 0.39);
+}
+
+input:-ms-input-placeholder {
+	color: rgba(88, 88, 88, 0.39);
+}
+
+.post-password-form {
+	position: relative;
+}
+
+.post-password-form label {
+	display: block;
+}
+
+.post-password-form input[type='submit'] {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+}
+
+.search-form {
+	position: relative;
+	margin-bottom: 1.5em;
+}
+
+.search-submit {
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+input[type='submit'].search-submit {
+	border-top-left-radius: 0;
+	border-bottom-left-radius: 0;
+}
+
+/* Buttons */
+
+.button,
+button,
+input[type='button'],
+input[type='reset'],
+input[type='submit'] {
+	display: inline-block;
+	margin: 0;
+	padding: 1.125em 1.5em;
+	border: 1px solid;
+	border-color: rgba(88, 88, 88, 0.39);
+	-webkit-appearance: none;
+	color: #585858;
+	background-color: transparent;
+	background-image: none;
+	font-size: 16px;
+	font-size: 0.88889rem;
+	font-weight: 700;
+	line-height: 1;
+	text-align: center;
+	vertical-align: middle;
+	white-space: nowrap;
+	text-decoration: none;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	cursor: pointer;
+}
+
+.button:active,
+button:active,
+input[type='button']:active,
+input[type='reset']:active,
+input[type='submit']:active {
+	outline: 0;
+}
+
+.button:focus,
+button:focus,
+input[type='button']:focus,
+input[type='reset']:focus,
+input[type='submit']:focus {
+	outline: thin dotted;
+	outline: 5px auto -webkit-focus-ring-color;
+	outline-offset: -2px;
+}
+
+.button:hover,
+button:hover,
+input[type='button']:hover,
+input[type='reset']:hover,
+input[type='submit']:hover,
+.button:focus,
+button:focus,
+input[type='button']:focus,
+input[type='reset']:focus,
+input[type='submit']:focus {
+	border-color: #585858;
+	color: #fff;
+	background-color: #585858;
+	text-decoration: none;
+}
+
+.button-accent,
+input[type='submit'].search-submit {
+	border-color: #5d8aa6;
+	color: #fff;
+	background-color: #5d8aa6;
+}
+
+.button-accent:hover,
+input[type='submit'].search-submit:hover,
+.button-accent:focus,
+input[type='submit'].search-submit:focus {
+	border-color: #5d8aa6;
+	color: #5d8aa6;
+	background-color: transparent;
+	text-decoration: none;
+}
+
+.button-success {
+	border-color: #1fc281;
+	color: #fff;
+	background-color: #1fc281;
+}
+
+.button-success:hover,
+.button-success:focus {
+	border-color: #1fc281;
+	color: #1fc281;
+	background-color: transparent;
+	text-decoration: none;
+}
+
+.button-info {
+	border-color: #00b9f2;
+	color: #fff;
+	background-color: #00b9f2;
+}
+
+.button-info:hover,
+.button-info:focus {
+	border-color: #00b9f2;
+	color: #00b9f2;
+	background-color: transparent;
+	text-decoration: none;
+}
+
+.button-warning {
+	border-color: #f4cc31;
+	color: #fff;
+	background-color: #f4cc31;
+}
+
+.button-warning:hover,
+.button-warning:focus {
+	border-color: #f4cc31;
+	color: #f4cc31;
+	background-color: transparent;
+	text-decoration: none;
+}
+
+.button-danger {
+	border-color: #e83337;
+	color: #fff;
+	background-color: #e83337;
+}
+
+.button-danger:hover,
+.button-danger:focus {
+	border-color: #e83337;
+	color: #e83337;
+	background-color: transparent;
+	text-decoration: none;
+}
+
 /* Alignments */
 
 .alignleft {
