@@ -2,13 +2,26 @@
 
 .site-footer {
 	@extend .clear;
-	padding: 0.75em 0 0;
-	background-color: $color__footer-bg;
+	padding: 1.5em 1.5em 0;
 	color: $color__footer-text;
+	background-color: $color__footer-bg;
+	@media screen and ( min-width: $sm ) {
+		padding: 1.5em 3em 1.5em;
+	}
+	a {
+		color: $color__text-secondary;
+	}
+}
+
+.site-info-generator {
+	@media screen and ( min-width: $sm ) {
+		&:after {
+			content: ' / ',;
+		}
+	}
 }
 
 .site-info {
 	display: block;
-	margin-bottom: 0.75em;
 	text-align: center;
 }

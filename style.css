@@ -453,6 +453,23 @@ body {
 	display: none;
 }
 
+/* Footer */
+
+.site-footer {
+	padding: 1.5em 1.5em 0;
+	color: rgba(88, 88, 88, 0.39);
+	background-color: rgba(88, 88, 88, 0.15);
+}
+
+.site-footer a {
+	color: rgba(88, 88, 88, 0.39);
+}
+
+.site-info {
+	display: block;
+	text-align: center;
+}
+
 /**
  * Components
  */
@@ -537,7 +554,8 @@ blockquote.alignright {
 
 /* Clearings */
 
-.clear:after {
+.clear:after,
+.site-footer:after {
 	display: table;
 	clear: both;
 	content: '';
@@ -563,6 +581,14 @@ blockquote.alignright {
 
 	.site-content {
 		padding: 3em 3em 1.5em;
+	}
+
+	.site-footer {
+		padding: 1.5em 3em 1.5em;
+	}
+
+	.site-info-generator:after {
+		content: ' / ';
 	}
 
 	blockquote.alignleft {

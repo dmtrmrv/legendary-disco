@@ -28,8 +28,8 @@ $color__header-bg:   #1a1a1a;
 $color__header-text: #ffffff;
 
 // Footer.
-$color__footer-bg: #1a1a1a;
-$color__footer-text: #ffffff;
+$color__footer-bg: $color__text-light;
+$color__footer-text: $color__text-secondary;
 
 // Button Default.
 $color__button: (
