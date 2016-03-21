@@ -806,8 +806,10 @@ blockquote.alignright {
 		padding: 1.5em 3em 1.5em;
 	}
 
-	.site-info-generator:after {
-		content: ' / ';
+	.site-info-generator {
+		margin-right: 0.75em;
+		padding-right: 0.75em;
+		border-right: 1px solid rgba(88, 88, 88, 0.39);
 	}
 
 	blockquote.alignleft {

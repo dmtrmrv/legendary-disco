@@ -15,9 +15,9 @@
 
 .site-info-generator {
 	@media screen and ( min-width: $sm ) {
-		&:after {
-			content: ' / ',;
-		}
+		margin-right: 0.75em;
+		padding-right: 0.75em;
+		border-right: 1px solid $color__text-secondary;
 	}
 }
 
