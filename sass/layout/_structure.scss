@@ -8,16 +8,18 @@ body {
 	max-width: 1024px;
 	margin-right: auto;
 	margin-left: auto;
-	background-color: #fff;
 }
 
+#main {
+	background-color: #fff;
+}
 .site-content {
-	padding: 1.5em 1.5em 0;
+	padding: 0 1.5em 0;
 	@media screen and ( min-width: $sm ) {
-		padding: 3em 3em 1.5em;
+		padding: 0 3em 1.5em;
 	}
 }
 
 .widget-area {
-	display: none;
+	
 }
