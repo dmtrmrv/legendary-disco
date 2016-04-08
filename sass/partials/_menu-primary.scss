@@ -1,6 +1,6 @@
 /* Primary Menu */
 
-.site-navigation {
+.site-header .site-navigation {
 	width: 100%;
 	ul {
 		display: none;
@@ -27,7 +27,7 @@
 }
 
 @media screen and ( min-width: 600px ) {
-	.site-navigation {
+	.site-header .site-navigation {
 		background-color: $color__header-bg;
 		ul {
 			display: block;
@@ -82,7 +82,7 @@
 }
 
 @media screen and ( min-width: 880px ) {
-	.site-navigation {
+	.site-header .site-navigation {
 		float: right;
 		width: auto;
 		margin-top: 2em;

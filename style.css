@@ -348,7 +348,7 @@ cite:before {
 
 ul,
 ol {
-	margin: 0 0 1.5em 1.5em;
+	margin: 0 0 1.5em -6px;
 	padding-left: 1.5em;
 }
 
@@ -862,25 +862,25 @@ img[class*='wp-image-'] {
 
 /* Primary Menu */
 
-.site-navigation {
+.site-header .site-navigation {
 	width: 100%;
 }
 
-.site-navigation ul {
+.site-header .site-navigation ul {
 	display: none;
 	margin: 0;
 	padding: 0.75em 0;
 	list-style: none;
 }
 
-.site-navigation ul ul {
+.site-header .site-navigation ul ul {
 	display: block;
 	margin: 0;
 	padding: 0;
 	border-bottom: 0;
 }
 
-.site-navigation a {
+.site-header .site-navigation a {
 	display: block;
 	padding: 0.6em;
 	color: #585858;
@@ -1099,11 +1099,6 @@ img[class*='wp-image-'] {
 	border-bottom: 1px solid rgba(88, 88, 88, 0.15);
 }
 
-.blog .hentry:last-of-type,
-.archive .hentry:last-of-type {
-	border-bottom: none;
-}
-
 .blog .hentry p,
 .archive .hentry p {
 	margin-bottom: 0.75em;
@@ -1144,11 +1139,11 @@ s
  */
 
 @media screen and (min-width: 600px) {
-	.site-navigation {
+	.site-header .site-navigation {
 		background-color: #fff;
 	}
 
-	.site-navigation ul {
+	.site-header .site-navigation ul {
 		display: block;
 		width: auto;
 		margin: 1.5em auto 0;
@@ -1158,7 +1153,7 @@ s
 		list-style: none;
 	}
 
-	.site-navigation ul ul {
+	.site-header .site-navigation ul ul {
 		float: left;
 		position: absolute;
 		z-index: 99999;
@@ -1171,33 +1166,33 @@ s
 		text-align: left;
 	}
 
-	.site-navigation ul ul ul {
+	.site-header .site-navigation ul ul ul {
 		top: 0;
 		left: -999em;
 	}
 
-	.site-navigation ul ul li:hover > ul,
-	.site-navigation ul ul li.focus > ul {
+	.site-header .site-navigation ul ul li:hover > ul,
+	.site-header .site-navigation ul ul li.focus > ul {
 		left: 100%;
 	}
 
-	.site-navigation ul ul a {
+	.site-header .site-navigation ul ul a {
 		width: 15em;
 		padding: 0 1.2em;
 		font-weight: normal;
 	}
 
-	.site-navigation ul li:hover > ul,
-	.site-navigation ul li.focus > ul {
+	.site-header .site-navigation ul li:hover > ul,
+	.site-header .site-navigation ul li.focus > ul {
 		left: -0.75em;
 	}
 
-	.site-navigation li {
+	.site-header .site-navigation li {
 		display: inline-block;
 		position: relative;
 	}
 
-	.site-navigation a {
+	.site-header .site-navigation a {
 		padding: 18px 6px;
 		background-color: #fff;
 		text-align: left;
@@ -1286,7 +1281,7 @@ s
 		width: 126px;
 	}
 
-	.site-navigation {
+	.site-header .site-navigation {
 		float: right;
 		width: auto;
 		margin-top: 2em;
@@ -1294,16 +1289,16 @@ s
 		text-align: right;
 	}
 
-	.site-navigation ul {
+	.site-header .site-navigation ul {
 		margin-top: 0;
 	}
 
-	.site-navigation ul li:hover > ul,
-	.site-navigation ul li.focus > ul {
+	.site-header .site-navigation ul li:hover > ul,
+	.site-header .site-navigation ul li.focus > ul {
 		left: -0.5em;
 	}
 
-	.site-navigation a {
+	.site-header .site-navigation a {
 		padding: 18px 9px;
 	}
 }

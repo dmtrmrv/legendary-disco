@@ -13,9 +13,6 @@
 	.hentry {
 		margin-bottom: 1.5em;
 		border-bottom: 1px solid $color__text-light;
-		&:last-of-type {
-			border-bottom: none;
-		}
 		@media screen and ( min-width: $sm ) {
 			margin-bottom: 3em;
 			padding-bottom: 1.5em;
