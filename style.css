@@ -21,7 +21,7 @@ html {
 body {
 	margin: 0;
 	color: #585858;
-	background: #fff6e5;
+	background: #f0f0f0;
 	line-height: 1.5;
 }
 
@@ -433,7 +433,7 @@ var {
 /* Structure */
 
 body {
-	background-color: #fff6e5;
+	background-color: #f0f0f0;
 }
 
 .site {
@@ -762,6 +762,38 @@ blockquote.alignright {
 	margin: 1.125em 0 1.125em 1.125em;
 }
 
+/* Images */
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+img[class*='wp-image-'] {
+	display: block;
+}
+
+/* Captions */
+
+.wp-caption {
+	max-width: 100%;
+	margin-bottom: 1.125em;
+}
+
+.wp-caption img[class*='wp-image-'] {
+	display: block;
+	margin-right: auto;
+	margin-bottom: 0.375em;
+	margin-left: auto;
+}
+
+.wp-caption .wp-caption-text {
+	display: block;
+	color: rgba(88, 88, 88, 0.39);
+	font-size: 0.75em;
+	line-height: 2em;
+}
+
 /* Accessibility */
 
 .assistive-text,
@@ -904,6 +936,145 @@ blockquote.alignright {
 }
 
 /**
+ * Widgets
+ */
+
+.widget-area {
+	max-width: 600px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.widget {
+	margin: 0 0 1.38889em;
+	word-wrap: break-word;
+}
+
+.widget-area .widget {
+	padding: 1.5em;
+	border: 1px solid rgba(88, 88, 88, 0.15);
+}
+
+.widget select {
+	max-width: 100%;
+}
+
+.widget:not(.widget_text) ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.widget_search {
+	margin-bottom: 1.5em;
+	padding: 0;
+	border: none;
+	background-color: transparent;
+}
+
+.widget_search .search-submit {
+	display: none;
+}
+
+.widget_calendar caption {
+	color: #fff;
+	background-color: #585858;
+	font-size: 11.25px;
+	font-size: 0.625rem;
+	font-weight: normal;
+	line-height: 27px;
+	line-height: 1.5rem;
+	letter-spacing: 0.0625em;
+	text-transform: uppercase;
+}
+
+.widget_calendar table {
+	max-width: 100%;
+	margin-bottom: 0;
+}
+
+.widget_calendar td,
+.widget_calendar th {
+	padding: 0;
+	font-size: 13.5px;
+	font-size: 0.75rem;
+	line-height: 2em;
+	text-align: center;
+}
+
+.widget_calendar td {
+	line-height: 1.92593em;
+}
+
+.widget_calendar th {
+	line-height: 1.85185em;
+}
+
+.widget_calendar tfoot td:first-child {
+	padding-left: 0.75em;
+	text-align: left;
+}
+
+.widget_calendar tfoot td:last-child {
+	padding-right: 0.75em;
+	text-align: right;
+}
+
+.widget.widget_recent_comments li,
+.widget.widget_recent_entries li {
+	margin-bottom: 0.75em;
+	padding-bottom: 0.69444em;
+	border-bottom: 1px solid;
+	border-bottom-color: rgba(88, 88, 88, 0.15);
+}
+
+.widget.widget_recent_comments li:last-child,
+.widget.widget_recent_entries li:last-child {
+	margin-bottom: 0;
+	border-bottom: none;
+}
+
+.widget_rss .widget-title a:first-child {
+	display: none;
+}
+
+.widget_rss li {
+	margin-bottom: 1.5em;
+}
+
+.widget_rss a {
+	display: block;
+}
+
+.widget_rss cite {
+	margin: 0;
+	color: rgba(88, 88, 88, 0.39);
+}
+
+.widget_rss .rss-date {
+	display: block;
+	margin: 0;
+	color: rgba(88, 88, 88, 0.39);
+	font-size: 13.5px;
+	font-size: 0.75rem;
+	line-height: 27px;
+	line-height: 1.5rem;
+}
+
+.widget.widget_nav_menu ul ul {
+	margin-left: 1em;
+}
+
+.widget-title {
+	margin-bottom: 13.5px;
+	font-size: 18px;
+	font-size: 1rem;
+	font-weight: 400;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+}
+
+/**
  * Templates
  */
 
@@ -1019,6 +1190,14 @@ blockquote.alignright {
 
 	blockquote.alignright {
 		margin: 2.25em 0 2.25em 2.25em;
+	}
+
+	.widget {
+		margin: 0 0 2.88889em;
+	}
+
+	.widget_search {
+		margin-bottom: 3em;
 	}
 }
 

@@ -18,7 +18,7 @@
 	}
 	.widget-area & {
 		padding: 1.5em;
-		border: 1px solid $color__text-secondary;
+		border: 1px solid $color__text-light;
 	}
 	select {
 		max-width: 100%;
@@ -128,5 +128,9 @@
 }
 
 .widget-title {
+	@include font-size( 1 );
 	margin-bottom: 13.5px;
+	font-weight: 400;
+	letter-spacing: 1px;
+	text-transform: uppercase;
 }
