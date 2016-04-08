@@ -224,10 +224,8 @@ h6 {
 }
 
 h1 {
-	font-size: 32px;
-	font-size: 1.77778rem;
-	line-height: 40.5px;
-	line-height: 2.25rem;
+	font-size: 27px;
+	font-size: 1.5rem;
 }
 
 h2 {
@@ -442,28 +440,21 @@ body {
 	max-width: 1024px;
 	margin-right: auto;
 	margin-left: auto;
-}
-
-#main {
-	background-color: #fff;
-}
-
-.site-content {
 	padding: 0 1.5em 0;
+	background-color: #fff;
 }
 
 /* Header */
 
 .site-header {
-	padding: 1.5em;
-	background-color: #f3f3f3;
+	padding: 1.5em 0;
+	background-color: #fff;
 }
 
 .site-title {
 	width: 126px;
 	margin: 0 auto;
 	color: transparent;
-	background-color: #ccc;
 	text-indent: -9999px;
 }
 
@@ -810,6 +801,7 @@ blockquote.alignright {
 /* Clearings */
 
 .clear:after,
+#main:after,
 .site-header:after,
 .site-footer:after {
 	display: table;
@@ -844,6 +836,7 @@ blockquote.alignright {
 .site-navigation a {
 	display: block;
 	padding: 0.6em;
+	color: #585858;
 	font-size: 15px;
 	line-height: 1.2;
 	text-align: center;
@@ -989,8 +982,20 @@ blockquote.alignright {
 		margin: 2.25em;
 	}
 
-	.site-content {
+	.site {
 		padding: 0 3em 1.5em;
+	}
+
+	.site-content {
+		float: left;
+		width: 65.50218%;
+		margin-right: 3.49345%;
+	}
+
+	.widget-area {
+		float: right;
+		width: 31.00437%;
+		margin-right: 0;
 	}
 
 	.site-footer {
@@ -1019,7 +1024,7 @@ blockquote.alignright {
 
 @media screen and (min-width: 880px) {
 	.site-header {
-		padding: 3em;
+		padding: 3em 0;
 	}
 
 	hgroup {

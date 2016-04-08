@@ -16,8 +16,7 @@ h6 {
 }
 
 h1 {
-	@include font-size( 32/18 );
-	@include line-height( 2.25 );
+	@include font-size( 27/18 );
 }
 
 h2 {

@@ -8,18 +8,25 @@ body {
 	max-width: 1024px;
 	margin-right: auto;
 	margin-left: auto;
-}
-
-#main {
-	background-color: #fff;
-}
-.site-content {
 	padding: 0 1.5em 0;
+	background-color: #fff;
 	@media screen and ( min-width: $sm ) {
 		padding: 0 3em 1.5em;
 	}
 }
 
+#main {
+	@extend .clear;
+}
+
+.site-content {
+	@media screen and ( min-width: $sm ) {
+		@include span(8);
+	}
+}
+
 .widget-area {
-	
+	@media screen and ( min-width: $sm ) {
+		@include span( 4 last );
+	}
 }

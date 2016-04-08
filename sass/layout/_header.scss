@@ -2,10 +2,10 @@
 
 .site-header {
 	@extend .clear;
-	padding: 1.5em;
-	background-color: #f3f3f3;
+	padding: 1.5em 0;
+	background-color: #fff;
 	@media screen and ( min-width: 880px ) {
-		padding: 3em;
+		padding: 3em 0;
 	}
 
 }
@@ -26,7 +26,6 @@ hgroup {
 	margin: 0 auto;
 	color: transparent;
 	text-indent: -9999px;
-	background-color: #ccc;
 	a {
 		@include with-layout( $susy-static ) {
 			width: span( 2 );
