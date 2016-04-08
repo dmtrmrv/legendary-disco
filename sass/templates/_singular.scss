@@ -1,0 +1,21 @@
+/* Single */
+
+.singular {
+	.edit-link {
+		display: block;
+		margin-bottom: 1.5em;
+	}
+}
+
+.page-slug-wordcamp-moscow-2016,s
+.page-slug-schedule,
+.page-slug-sponsors {
+	.widget-area {
+		display: none;
+	}
+	@media screen and (min-width: $sm) {
+		.site-content {
+			width: 100%;
+		}
+	}
+}

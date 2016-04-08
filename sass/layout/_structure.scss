@@ -20,12 +20,23 @@ body {
 }
 
 .site-content {
+	@include with-layout( $susy-static ) {
+		max-width: span( 6 );
+	}
+	margin-left: auto;
+	margin-right: auto;
 	@media screen and ( min-width: $sm ) {
 		@include span(8);
+		max-width: 100%;
 	}
 }
 
 .widget-area {
+	@include with_layout( $susy-static ) {
+		max-width: span( 6 );
+	}
+	margin-right: auto;
+	margin-left: auto;
 	@media screen and ( min-width: $sm ) {
 		@include span( 4 last );
 	}

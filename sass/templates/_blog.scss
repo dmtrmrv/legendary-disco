@@ -4,50 +4,34 @@
 	display: block;
 }
 
+.entry-meta {
+	@extend .assistive-text;
+}
+
 .blog,
 .archive {
 	.hentry {
-		@extend .clear;
-		@include with-layout( $susy-static ) {
-			max-width: span( 6 );
-		}
-		margin-right: auto;
-		margin-bottom: em_minus_px( 1.5em, 1px );
-		margin-left: auto;
+		margin-bottom: 1.5em;
 		border-bottom: 1px solid $color__text-light;
-		word-wrap: break-word;
-		@media screen and ( min-width: $md ) {
-			max-width: 100%;
-			margin-bottom: em_minus_px( 3em, 1px );
+		&:last-of-type {
+			border-bottom: none;
+		}
+		@media screen and ( min-width: $sm ) {
+			margin-bottom: 3em;
 			padding-bottom: 1.5em;
-			&.has-post-thumbnail {
-				.entry-header,
-				.entry-content {
-					@include span( 6 last );
-				}
-			}
-			.post-thumbnail {
-				@include span( 6 );
-				overflow: hidden;
-				img {
-					transition: 0.1s ease-in-out;
-					transform: scale( 1 );
-					&:hover {
-						transform: scale( 1.015 );
-					}
-				}
+		}
+		p {
+			margin-bottom: 0.75em;
+			&:last-of-type {
+				margin-bottom: 1.5em;
 			}
 		}
 	}
 	.entry-title {
-		font-weight: 400;
 		margin-bottom: 13.5px;
 		margin-bottom: 0.75rem;
+		a {
+			color: $color__headings;
+		}
 	}
-
-	.entry-meta {
-		margin-bottom: 13.5px;
-		margin-bottom: 0.75rem;
-	}
-
 }

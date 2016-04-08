@@ -2,14 +2,6 @@
  * Widgets
  */
 
-.widget-area {
-	@include with_layout( $susy-static ) {
-		max-width: span( 8 );
-	}
-	margin-right: auto;
-	margin-left: auto;
-}
-
 .widget {
 	margin: 0 0 em_minus_px( 1.5em, 2px );
 	word-wrap: break-word;
