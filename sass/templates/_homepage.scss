@@ -5,11 +5,13 @@
 	.edit-link {
 		@extend .assistive-text;
 	}
+	.site-footer {
+		border-top: none;
+	}
 }
 
 .outset {
-	margin-right: -1.5em;
-	margin-left: -1.5em;
+	@extend .clear;
 	@media screen and ( min-width: $sm ) {
 		margin-right: -3em;
 		margin-left: -3em;
@@ -24,16 +26,19 @@
 	}
 }
 
+.wcm-section-heading {
+	text-align: center;
+}
+
+// Hero
 .wcm-hero {
+	@extend .clear;
+	margin-bottom: 1.5em;
+	color: #fff;
 	background-image: url( 'http://2014.new-site.wordcamp.dev/wp-content/uploads/sites/45/2016/04/hero-v0.1.1.jpg' );
 	background-repeat: no-repeat;
 	background-size: 100%;
-}
-
-.wcm-hero {
-	margin-bottom: 1.5em;
-	color: #fff;
-	// background-color: $color__text;
+	background-size: cover;
 	text-align: center;
 	h1 {
 		color: #fff;
@@ -46,16 +51,13 @@
 	}
 }
 
-.wcm-section-heading {
-	text-align: center;
-}
-
 .wcm-about {
 	@media screen and ( min-width: $sm ) {
 		padding-bottom: 1.5em;
 	}
 }
 
+// Speakers.
 .wcm-speakers {
 	margin-bottom: 1.5em;
 	background-color: $color__text-light;
@@ -96,19 +98,29 @@
 	text-transform: none;
 }
 
+.wcm-section-message {
+	color: $color__text-secondary;
+	text-align: center;
+	@media screen and ( min-width: $sm ) {
+		margin-top: 3em;
+	}
+	a {
+		color: $color__text-secondary;
+		text-decoration: underline;
+	}
+}
+
 // Sponsors.
 .wcm-sponsors {
 	@extend .clear;
 	margin-bottom: 1.5em;
-	// @media screen and ( min-width: $sm ) {
-	// 	margin-bottom: 3em;
-	// }
 }
 
 .wcm-sponsor {
 	margin-bottom: 1.5em;
 	@media screen and ( min-width: $sm ) {
 		@include span( 3 );
+		margin-bottom: gutter();
 	}
 	a {
 		display: block;
@@ -122,14 +134,11 @@
 	}
 }
 
+// Purchase tickets.
 .wcm-purchase-ticket {
 	@extend .clear;
-	margin-bottom: 1.5em;
 	padding: 1.5em 0;
 	background-color: $color__text-light;
-	@media screen and ( min-width: $sm ) {
-		margin-bottom: 3em;
-	}
 	@media screen and ( min-width: $sm ) {
 		padding: 3em 0 1.5em;
 	}

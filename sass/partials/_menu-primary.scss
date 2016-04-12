@@ -44,8 +44,9 @@
 				top: 100%;
 				left: -999em;
 				margin: 0;
-				padding: 0.5em 0 0.75em;
+				padding: 0.75em 0 0.75em;
 				border: 1px solid $color__text-light;
+				border-top: 3px solid $color__accent;
 				background-color: #fff;
 				text-align: left;
 				ul {

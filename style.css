@@ -431,7 +431,7 @@ var {
 	max-width: 442px;
 }
 
-.col-wrap.centerblock {
+.col-wrap.center-block {
 	margin-right: auto;
 	margin-left: auto;
 }
@@ -447,9 +447,7 @@ var {
 /* Structure */
 
 body {
-	background-color: #f0f0f0;
-	background-image: url(http://2014.new-site.wordcamp.dev/wp-content/uploads/sites/45/2015/05/wordcamp-russia-2015-filler-2.jpg);
-	background-size: 100%;
+	background-color: #000;
 }
 
 .site {
@@ -892,7 +890,9 @@ img[class*='wp-image-'] {
 #main:after,
 .site-header:after,
 .site-footer:after,
+.outset:after,
 .section:after,
+.wcm-hero:after,
 .wcm-sponsors:after,
 .wcm-purchase-ticket:after {
 	display: table;
@@ -1180,24 +1180,25 @@ s
 
 /* Homepage */
 
-.outset {
-	margin-right: -1.5em;
-	margin-left: -1.5em;
+.page-slug-wordcamp-moscow-2016 .site-footer {
+	border-top: none;
 }
 
 .section {
 	padding: 1.5em 1.5em 0;
 }
 
-.wcm-hero {
-	background-image: url('http://2014.new-site.wordcamp.dev/wp-content/uploads/sites/45/2016/04/hero-v0.1.1.jpg');
-	background-repeat: no-repeat;
-	background-size: 100%;
+.wcm-section-heading {
+	text-align: center;
 }
 
 .wcm-hero {
 	margin-bottom: 1.5em;
 	color: #fff;
+	background-image: url('http://2014.new-site.wordcamp.dev/wp-content/uploads/sites/45/2016/04/hero-v0.1.1.jpg');
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-size: cover;
 	text-align: center;
 }
 
@@ -1205,10 +1206,6 @@ s
 	color: #fff;
 	font-size: 36px;
 	line-height: 1.1;
-}
-
-.wcm-section-heading {
-	text-align: center;
 }
 
 .wcm-speakers {
@@ -1234,6 +1231,16 @@ s
 	text-transform: none;
 }
 
+.wcm-section-message {
+	color: rgba(88, 88, 88, 0.39);
+	text-align: center;
+}
+
+.wcm-section-message a {
+	color: rgba(88, 88, 88, 0.39);
+	text-decoration: underline;
+}
+
 .wcm-sponsors {
 	margin-bottom: 1.5em;
 }
@@ -1256,7 +1263,6 @@ s
 }
 
 .wcm-purchase-ticket {
-	margin-bottom: 1.5em;
 	padding: 1.5em 0;
 	background-color: rgba(88, 88, 88, 0.15);
 }
@@ -1293,8 +1299,9 @@ s
 		top: 100%;
 		left: -999em;
 		margin: 0;
-		padding: 0.5em 0 0.75em;
+		padding: 0.75em 0 0.75em;
 		border: 1px solid rgba(88, 88, 88, 0.15);
+		border-top: 3px solid #2185c5;
 		background-color: #fff;
 		text-align: left;
 	}
@@ -1458,14 +1465,15 @@ s
 		margin-right: 0;
 	}
 
+	.wcm-section-message {
+		margin-top: 3em;
+	}
+
 	.wcm-sponsor {
 		float: left;
 		width: 22.37991%;
 		margin-right: 3.49345%;
-	}
-
-	.wcm-purchase-ticket {
-		margin-bottom: 3em;
+		margin-bottom: 3.49345%;
 	}
 
 	.wcm-purchase-ticket {

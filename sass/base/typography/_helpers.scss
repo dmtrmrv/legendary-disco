@@ -4,7 +4,7 @@
 	@include with-layout( $susy-static ) {
 		max-width: span( 6 );
 	}
-	&.centerblock {
+	&.center-block {
 		margin-left: auto;
 		margin-right: auto;
 	}
