@@ -1,0 +1,34 @@
+/* Helpers */
+
+.col-wrap {
+	@include with-layout( $susy-static ) {
+		max-width: span( 6 );
+	}
+	&.centerblock {
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
+.cols,
+.col {
+	@extend .clear;
+}
+
+@media screen and ( min-width: $sm ) {
+	.cols-2 .col {
+		@include span( 6 );
+	}
+
+	.cols-3 .col {
+		@include span( 4 );
+	}
+
+	.cols-4 .col {
+		@include span( 3);
+	}
+}
+
+.col.last {
+	margin-right: 0 !important;
+}

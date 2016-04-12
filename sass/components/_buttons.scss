@@ -55,6 +55,10 @@ input[type='submit'] {
 	@include button-color( $color__button-accent );
 }
 
+.button-border {
+	@include button-color( $color__button-border );
+}
+
 .button-success {
 	@include button-color( $color__button-success );
 }

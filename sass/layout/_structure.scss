@@ -1,7 +1,9 @@
 /* Structure */
 
 body {
-	background-color: $color__background-body;
+	background-color: #f0f0f0;
+	background-image: url(http://2014.new-site.wordcamp.dev/wp-content/uploads/sites/45/2015/05/wordcamp-russia-2015-filler-2.jpg);
+	background-size: 100%;
 }
 
 .site {
@@ -11,7 +13,7 @@ body {
 	padding: 0 1.5em 0;
 	background-color: #fff;
 	@media screen and ( min-width: $sm ) {
-		padding: 0 3em 1.5em;
+		padding: 0 3em;
 	}
 }
 
@@ -23,8 +25,8 @@ body {
 	@include with-layout( $susy-static ) {
 		max-width: span( 6 );
 	}
-	margin-left: auto;
 	margin-right: auto;
+	margin-left: auto;
 	@media screen and ( min-width: $sm ) {
 		@include span(8);
 		max-width: 100%;

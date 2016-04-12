@@ -19,6 +19,7 @@
 @import 'base/typography/lists';
 @import 'base/typography/tables';
 @import 'base/typography/code';
+@import 'base/typography/helpers';
 
 /**
  * Layout
@@ -62,6 +63,7 @@
  */
 @import 'templates/blog';
 @import 'templates/singular';
+@import 'templates/homepage';
 
 /**
  * Media Queries

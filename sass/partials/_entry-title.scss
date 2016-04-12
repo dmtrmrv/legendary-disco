@@ -9,9 +9,9 @@
 	}
 	.single-page & {
 		margin-bottom: 24px;
-		line-height: 27px;
+		line-height: 1.5rem;
 		@media screen and ( min-width: $sm ) {
-			margin-bottom: 54px;
+			margin-bottom: 3rem;
 		}
 	}
 }

@@ -50,6 +50,16 @@ $color__button-accent: (
 	hover_background: transparent,
 );
 
+// Button Accent.
+$color__button-border: (
+	text:             #fff,
+	border:           #fff,
+	background:       transparent,
+	hover_text:       $color__accent,
+	hover_border:     #fff,
+	hover_background: #fff,
+);
+
 // Button Success.
 $color__button-success: (
 	text:             #fff,
