@@ -101,9 +101,7 @@
 .wcm-section-message {
 	color: $color__text-secondary;
 	text-align: center;
-	@media screen and ( min-width: $sm ) {
-		margin-top: 1.5em;
-	}
+	margin-bottom: gutter();
 	a {
 		color: $color__text-secondary;
 		text-decoration: underline;
@@ -113,7 +111,6 @@
 // Sponsors.
 .wcm-sponsors {
 	@extend .clear;
-	// margin-bottom: 1.5em;
 }
 
 .wcm-sponsor {
