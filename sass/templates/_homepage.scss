@@ -113,17 +113,13 @@
 // Sponsors.
 .wcm-sponsors {
 	@extend .clear;
-	margin-bottom: 1.5em;
+	// margin-bottom: 1.5em;
 }
 
 .wcm-sponsor {
 	margin-bottom: 1.5em;
 	border: 1px solid $color__text-light;
 	background-color: rgb( 250, 250, 250 );
-	@media screen and ( min-width: $sm ) {
-		@include span( 4 );
-		margin-bottom: gutter();
-	}
 	a {
 		display: block;
 	}
@@ -131,7 +127,31 @@
 		display: block;
 		width: 100%;
 	}
+}
+.wcm-sponsors-gold .wcm-sponsor {
+	@media screen and ( min-width: $sm ) {
+		@include span( 4 );
+		margin-bottom: gutter();
+	}
 	&:nth-of-type(3n) {
+		margin-right: 0;
+	}
+}
+.wcm-sponsors-silver .wcm-sponsor {
+	@media screen and ( min-width: $sm ) {
+		@include span( 3 );
+		margin-bottom: gutter();
+	}
+	&:nth-of-type(4n) {
+		margin-right: 0;
+	}
+}
+.wcm-sponsors-bronze .wcm-sponsor {
+	@media screen and ( min-width: $sm ) {
+		@include span( 2 );
+		margin-bottom: gutter();
+	}
+	&:nth-of-type(6n) {
 		margin-right: 0;
 	}
 }
