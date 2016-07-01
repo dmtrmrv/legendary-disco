@@ -670,7 +670,8 @@ input[type='submit']:focus {
 }
 
 .button-accent,
-input[type='submit'].search-submit {
+input[type='submit'].search-submit,
+#tix input[type=submit] {
 	border-color: #2185c5;
 	color: #fff;
 	background-color: #2185c5;
@@ -678,8 +679,10 @@ input[type='submit'].search-submit {
 
 .button-accent:hover,
 input[type='submit'].search-submit:hover,
+#tix input[type=submit]:hover,
 .button-accent:focus,
-input[type='submit'].search-submit:focus {
+input[type='submit'].search-submit:focus,
+#tix input[type=submit]:focus {
 	border-color: #2185c5;
 	color: #2185c5;
 	background-color: transparent;
@@ -1128,6 +1131,43 @@ img[class*='wp-image-'] {
 }
 
 /**
+ * Camptix overrides.
+ */
+
+body.admin-bar #tix {
+	padding-top: 0;
+}
+
+.page-slug-tickets .tix-attendee-form th,
+.page-slug-tickets .tix-attendee-form td.tix-left {
+	padding-left: 0;
+}
+
+.page-slug-tickets .tix-attendee-form td.tix-right {
+	padding-right: 0;
+}
+
+.page-slug-tickets .tix-attendee-form input[type='text'],
+.page-slug-tickets .tix-attendee-form input[type='email'],
+.page-slug-tickets .tix-attendee-form input[type='url'],
+.page-slug-tickets .tix-attendee-form textarea {
+	width: 100%;
+}
+
+.page-slug-tickets .tix-row-coupon td {
+	padding-right: 0;
+	padding-left: 0;
+}
+
+.page-slug-tickets #tix-coupon-container {
+	position: relative;
+}
+
+.page-slug-tickets #tix-coupon-container .tix-coupon-input {
+	margin-bottom: 0.75em;
+}
+
+/**
  * Templates
  */
 
@@ -1420,6 +1460,16 @@ img[class*='wp-image-'] {
 
 	.widget_search {
 		margin-bottom: 3em;
+	}
+
+	.page-slug-tickets #tix-coupon-container .tix-coupon-input {
+		margin-bottom: 0;
+	}
+
+	.page-slug-tickets #tix-coupon-container input[type='submit'] {
+		position: absolute;
+		top: 0;
+		right: 0;
 	}
 
 	.blog .hentry,
