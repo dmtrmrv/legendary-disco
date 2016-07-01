@@ -1172,9 +1172,9 @@ img[class*='wp-image-'] {
 }
 
 .page-slug-wordcamp-moscow-2016 .widget-area,
-s
 .page-slug-schedule .widget-area,
-.page-slug-sponsors .widget-area {
+.page-slug-sponsors .widget-area,
+.page-slug-tickets .widget-area {
 	display: none;
 }
 
@@ -1429,9 +1429,9 @@ s
 	}
 
 	.page-slug-wordcamp-moscow-2016 .site-content,
-	s
 	.page-slug-schedule .site-content,
-	.page-slug-sponsors .site-content {
+	.page-slug-sponsors .site-content,
+	.page-slug-tickets .site-content {
 		width: 100%;
 	}
 
