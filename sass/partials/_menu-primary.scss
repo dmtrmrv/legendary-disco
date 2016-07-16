@@ -142,20 +142,20 @@ $dash_width: 1.5em;
 		content: '';
 	}
 	&:before {
-		top: 23px;
+		top: 20px;
 	}
 	&:after {
-		bottom: 23px;
+		bottom: 20px;
 	}
 }
 
 .menu-toggle.toggled-on {
 	&:before {
-		top: 26px;
+		top: 23px;
 		transform: rotate( 225deg );
 	}
 	&:after {
-		bottom: 27px;
+		bottom: 24px;
 		transform: rotate( -225deg );
 	}
 }

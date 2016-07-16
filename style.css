@@ -893,9 +893,11 @@ img[class*='wp-image-'] {
 #main:after,
 .site-header:after,
 .site-footer:after,
+.paging-navigation:after,
 .outset:after,
 .section:after,
 .wcm-hero:after,
+.wcm-hashtag:after,
 .wcm-sponsors:after,
 .wcm-purchase-ticket:after {
 	display: table;
@@ -976,25 +978,42 @@ img[class*='wp-image-'] {
 }
 
 .menu-toggle:before {
-	top: 23px;
+	top: 20px;
 }
 
 .menu-toggle:after {
-	bottom: 23px;
+	bottom: 20px;
 }
 
 .menu-toggle.toggled-on:before {
-	top: 26px;
+	top: 23px;
 	-webkit-transform: rotate(225deg);
 	    -ms-transform: rotate(225deg);
 	        transform: rotate(225deg);
 }
 
 .menu-toggle.toggled-on:after {
-	bottom: 27px;
+	bottom: 24px;
 	-webkit-transform: rotate(-225deg);
 	    -ms-transform: rotate(-225deg);
 	        transform: rotate(-225deg);
+}
+
+/* Post Navigation (Next/Previous Post) */
+
+.paging-navigation {
+	margin-bottom: 1.5em;
+}
+
+.paging-navigation .nav-previous {
+	float: left;
+	width: 50%;
+}
+
+.paging-navigation .nav-next {
+	float: right;
+	width: 50%;
+	text-align: right;
 }
 
 /**
@@ -1233,7 +1252,6 @@ body.admin-bar #tix {
 }
 
 .wcm-hero {
-	margin-bottom: 1.5em;
 	color: #fff;
 	background-image: url('https://2016.moscow.wordcamp.org/files/2016/04/hero-v0.1.4.png');
 	background-repeat: no-repeat;
@@ -1246,6 +1264,24 @@ body.admin-bar #tix {
 	color: #fff;
 	font-size: 36px;
 	line-height: 1.1;
+}
+
+.wcm-hashtag {
+	margin-bottom: 1.5em;
+	color: #fff;
+	background-color: #3889bd;
+	text-align: center;
+}
+
+.wcm-hashtag h2 {
+	margin-bottom: 9px;
+	color: #fff;
+	font-size: 27px;
+	text-align: center;
+}
+
+.wcm-hashtag p {
+	text-align: center;
 }
 
 .wcm-speakers {
@@ -1454,6 +1490,10 @@ body.admin-bar #tix {
 		margin: 2.25em 0 2.25em 2.25em;
 	}
 
+	.paging-navigation {
+		margin-bottom: 3em;
+	}
+
 	.widget {
 		margin: 0 0 2.875em;
 	}
@@ -1495,6 +1535,10 @@ body.admin-bar #tix {
 	}
 
 	.wcm-hero {
+		text-align: left;
+	}
+
+	.wcm-hashtag {
 		margin-bottom: 3em;
 		text-align: left;
 	}

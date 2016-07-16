@@ -33,7 +33,7 @@
 // Hero
 .wcm-hero {
 	@extend .clear;
-	margin-bottom: 1.5em;
+	// margin-bottom: 1.5em;
 	color: #fff;
 	background-image: url( 'https://2016.moscow.wordcamp.org/files/2016/04/hero-v0.1.4.png' );
 	background-repeat: no-repeat;
@@ -44,6 +44,26 @@
 		color: #fff;
 		font-size: 36px;
 		line-height: 1.1;
+	}
+	@media screen and ( min-width: $sm ) {
+		text-align: left;
+	}
+}
+
+.wcm-hashtag {
+	@extend .clear;
+	margin-bottom: 1.5em;
+	color: #fff;
+	background-color: #3889BD;
+	text-align: center;
+	h2 {
+		color: #fff;
+		font-size: 27px;
+		text-align: center;
+		margin-bottom: 9px;
+	}
+	p {
+		text-align: center;
 	}
 	@media screen and ( min-width: $sm ) {
 		margin-bottom: 3em;
