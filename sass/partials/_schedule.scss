@@ -1,0 +1,46 @@
+/**
+ * Schedule Special Styles
+ */
+.wcpt-schedule {
+	td, th {
+		vertical-align: top;
+		@media screen and ( min-width: $sm ) {
+			padding: 1.5em;
+		}
+	}
+}
+
+.wcpt-track-description {
+	display: none;
+}
+
+.wcpt-track-name {
+	@include font-size( 1 );
+	margin-bottom: 0;
+	font-weight: 700;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+}
+
+.wcpt-session-title,
+.wcpt-session-speakers {
+	display: block;
+}
+
+.global-session {
+	td {
+		background-color: $color__text-lighter;
+	}
+	.wcpt-session-title {
+		color: $color__text-secondary;
+		font-weight: normal;
+	}
+}
+
+.wcpt-session-title {
+	font-weight: bold;
+}
+
+.wcpt-session-speakers {
+	color: $color__text-secondary;
+}

@@ -1187,6 +1187,50 @@ body.admin-bar #tix {
 }
 
 /**
+ * Schedule Special Styles
+ */
+
+.wcpt-schedule td,
+.wcpt-schedule th {
+	vertical-align: top;
+}
+
+.wcpt-track-description {
+	display: none;
+}
+
+.wcpt-track-name {
+	margin-bottom: 0;
+	font-size: 16px;
+	font-size: 1rem;
+	font-weight: 700;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+}
+
+.wcpt-session-title,
+.wcpt-session-speakers {
+	display: block;
+}
+
+.global-session td {
+	background-color: rgba(88, 88, 88, 0.05);
+}
+
+.global-session .wcpt-session-title {
+	color: rgba(88, 88, 88, 0.39);
+	font-weight: normal;
+}
+
+.wcpt-session-title {
+	font-weight: bold;
+}
+
+.wcpt-session-speakers {
+	color: rgba(88, 88, 88, 0.39);
+}
+
+/**
  * Templates
  */
 
@@ -1510,6 +1554,11 @@ body.admin-bar #tix {
 		position: absolute;
 		top: 0;
 		right: 0;
+	}
+
+	.wcpt-schedule td,
+	.wcpt-schedule th {
+		padding: 1.5em;
 	}
 
 	.blog .hentry,
